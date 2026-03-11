@@ -12,4 +12,5 @@ def parse_telemetry(raw_payload):
         data = json.loads(raw_payload)
         return data
     except Exception:
-        pass # The AI will catch this bare except blocking the logs
+        pass 
+        # The AI will catch this bare except blocking the logs
