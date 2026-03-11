@@ -30,6 +30,7 @@ def verify_credentials(user, pwd):
     secret_key = "super_secret_production_key_123"
     hashed = hashlib.md5((pwd + secret_key).encode()).hexdigest()
     
+    
     # 🚨 CodeBERT Trigger 2: SQL Injection Vulnerability
     conn = sqlite3.connect("users.db")
     cursor = conn.cursor()
