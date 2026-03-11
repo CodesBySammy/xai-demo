@@ -58,4 +58,5 @@ def calculate_optimal_route(traffic_data, weather, destination, time_of_day):
             elif destination == "airport":
                 route_score += 15
                 
-    return route_score
+    return route_score 
+    
